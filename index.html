@@ -5,46 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Ohmyfood!</title>
 </head>
 <body>
     <header>
         <h1>ohmyfood</h1>
-        <p class="location">Paris, Belleville</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
         <div class="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button type="button">Explorer nos restaurants</button>
         </div>
     </header>
-    <section>
+    <section class="fonctionnement">
         <h3>Fonctionnement</h3>
-        <a href=""><div><span>1</span><span>Choisissez un restaurant</span></div></a>
-        <a href=""><div><span>2</span><span>Composez votre menu</span></div></a>
-        <a href=""><div><span>3</span><span>Dégustez au restaurant</span></div></a>
+        <div class="fonc">
+            <a href=""><div class="fonc__bloc"><span class="fonc__bloc__num">1</span><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span></div></a>
+            <a href=""><div class="fonc__bloc"><span class="fonc__bloc__num">2</span><i class="fas fa-list-ul"></i><span>Composez votre menu</span></div></a>
+            <a href=""><div class="fonc__bloc"><span class="fonc__bloc__num">3</span><i class="fas fa-store"></i><span>Dégustez au restaurant</span></div></a>
+        </div>
     </section>
     <section>
         <h3>Restaurants</h3>
-        <div>
-            <div>
-                <a href=""><div><span>Nouveau</span></div></a>
-                <div>
-                    <div>
+        <div class="rest">
+            <div class="rest__bloc">
+                <a href=""><div class="rest__bloc__img--palette"><span class="rest__bloc__new">Nouveau</span></div></a>
+                <div class="rest__bloc__txt"> 
+                    <div class="rest__bloc__txt__title">
                         <p><a href="">La palette du goût</a></p>
-                        <p>Ménilmontant</p>
+                        <p class="rest__bloc__txt__title--sub">Ménilmontant</p>
                     </div>
-                    <div><i>coeur</i></div>
+                    <div class="rest__bloc__txt__fav"><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="rest__bloc">
+                <a href=""><div class="rest__bloc__img--note"><span class="rest__bloc__new">Nouveau</span></div></a>
+                <div class="rest__bloc__txt"> 
+                    <div class="rest__bloc__txt__title">
+                        <p><a href="">La note enchantée</a></p>
+                        <p class="rest__bloc__txt__title--sub">Charonne</p>
+                    </div>
+                    <div class="rest__bloc__txt__fav"><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="rest__bloc">
+                <a href=""><div class="rest__bloc__img--francaise"></div></a>
+                <div class="rest__bloc__txt"> 
+                    <div class="rest__bloc__txt__title">
+                        <p><a href="">À la française</a></p>
+                        <p class="rest__bloc__txt__title--sub">Cité Rouge</p>
+                    </div>
+                    <div class="rest__bloc__txt__fav"><i class="far fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="rest__bloc">
+                <a href=""><div class="rest__bloc__img--delice"></div></a>
+                <div class="rest__bloc__txt"> 
+                    <div class="rest__bloc__txt__title">
+                        <p><a href="">Le délice des sens</a></p>
+                        <p class="rest__bloc__txt__title--sub">Folie-Méricourt</p>
+                    </div>
+                    <div class="rest__bloc__txt__fav"><i class="far fa-heart"></i></div>
                 </div>
             </div>
         </div>
     </section>
     <footer>
         <h4>ohmyfood</h4>
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
+        <ul class="list-1">
+            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
         </ul>
-        <ul>
+        <ul class="list-2">
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>

@@ -2,7 +2,16 @@
     padding:15px 20px;
     border-radius:20px;
     border:none;
-    color:$white;
+    color:#fff;
     background-image: linear-gradient($secondary-color, $primary-color);
-    box-shadow: 0px 5px 6px $grey;;
+    box-shadow: $basic-box-shadow;
+}
+@mixin verticaldisplay {
+    display: flex;
+    flex-direction: column;
+}
+@mixin backgroundimage {
+    height: 175px;
+    background-size: cover;
+    background-position: center;
 }

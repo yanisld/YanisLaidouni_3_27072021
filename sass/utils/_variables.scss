@@ -1,12 +1,22 @@
 $global-font:16px 'robotomedium', sans-serif;
 $h1-font:30px 'shrikhandregular', sans-serif;
-$h2-font:25px 'robotoblack', sans-serif;
+$h2-h3-home-font:25px 'robotobold', sans-serif;
 $light-font:'robotolight', sans-serif;
+$regular-font:'robotoregular', sans-serif;
+$thin-font:'robotothin', sans-serif;
+$black-font:'robotoblack', sans-serif;
+$bold-font:'robotobold', sans-serif;
 
 $primary-color:#9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
-$white:#fff;
-$black:#000;
 $grey:#cfcfcf;
 $grey-clar:#f6f6f6;
+$dark-grey:#353535;
+
+$basic-box-shadow:0px 5px 10px $grey;
+
+$img-palette:url('images/la-palette-du-gout.jpg');
+$img-note:url('images/la-note-enchantee.jpg');
+$img-francaise:url('images/a-la-francaise.jpg');
+$img-delice:url('images/delice-des-sens.jpg');
