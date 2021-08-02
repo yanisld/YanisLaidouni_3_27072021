@@ -1,4 +1,29 @@
+.top-header {
+    display: grid;
+    grid-template-columns: auto 250px auto;
+    align-items: center;
+    &__arrow {
+        justify-self: end;
+    }
+}
 h1 {
     text-align:center;
     padding:15px 0;
+}
+.background-palette {
+    background-image: $img-palette;
+    @include backgroundImageMenu;
+}
+.rest-intro {
+    background-color:$grey-clar;
+    width: 100%;
+    align-self: flex-end; 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 0;
+    border-radius: 35px 35px 0 0;
+    font-size: 24px;
+    &__title {
+        font:$rest-title;
+    }
 }

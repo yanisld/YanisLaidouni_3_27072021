@@ -123,9 +123,40 @@ button {
   box-shadow: 0px 5px 10px #cfcfcf;
 }
 
+.top-header {
+  display: grid;
+  grid-template-columns: auto 250px auto;
+  align-items: center;
+}
+.top-header__arrow {
+  justify-self: end;
+}
+
 h1 {
   text-align: center;
   padding: 15px 0;
+}
+
+.background-palette {
+  background-image: url("images/la-palette-du-gout.jpg");
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.rest-intro {
+  background-color: #f6f6f6;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px 0;
+  border-radius: 35px 35px 0 0;
+  font-size: 24px;
+}
+.rest-intro__title {
+  font: 25px "shrikhandregular", sans-serif;
 }
 
 section {

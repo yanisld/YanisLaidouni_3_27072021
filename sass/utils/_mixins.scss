@@ -15,3 +15,9 @@
     background-size: cover;
     background-position: center;
 }
+@mixin backgroundImageMenu {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
