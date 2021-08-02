@@ -115,12 +115,33 @@ h4 {
 }
 
 button {
-  padding: 15px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   border: none;
   color: #fff;
   background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 5px 10px #cfcfcf;
+  padding: 15px 20px;
+}
+
+.btn-commander button {
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 5px 10px #cfcfcf;
+  padding: 15px 40px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: #fff;
+}
+
+.menu-header {
+  margin: 0 0 20px 0;
 }
 
 .top-header {
@@ -151,17 +172,67 @@ h1 {
   align-self: flex-end;
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px 0;
+  padding: 30px 20px 0;
   border-radius: 35px 35px 0 0;
   font-size: 24px;
 }
 .rest-intro__title {
-  font: 25px "shrikhandregular", sans-serif;
+  font: 28px "shrikhandregular", sans-serif;
 }
 
 section {
-  padding: 50px 20px;
+  padding: 20px 20px 1px;
   background-color: #f6f6f6;
+}
+
+.menu-intro {
+  font-family: "robotolight";
+  font-size: 18px;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+.menu-intro:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.menu a {
+  margin: 0 0 15px 0;
+}
+
+.menu__items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  margin: 0 0 15px 0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 1px 10px #cfcfcf;
+}
+.menu__items__txt {
+  flex: 3;
+}
+.menu__items__txt__sub-title {
+  font-family: "robotolight", sans-serif;
+  font-size: 14px;
+}
+.menu__items__price {
+  flex: 0.5;
+  align-self: flex-end;
+}
+.menu__items__check {
+  flex: 0.5;
+  display: none;
+}
+
+.btn-commander {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 40px 0;
 }
 
 footer {
@@ -181,6 +252,11 @@ h4 {
 
 .list-2 {
   font-family: "robotoregular", sans-serif;
+}
+
+.home-section {
+  padding: 50px 20px;
+  background-color: #f6f6f6;
 }
 
 .location {
@@ -226,7 +302,7 @@ h3 {
 .fonc__bloc {
   padding: 25px 25px;
   background-color: #f6f6f6;
-  box-shadow: 0px 5px 10px #cfcfcf;
+  box-shadow: 0px 1px 10px #cfcfcf;
   border-radius: 20px;
 }
 .fonc__bloc__num {
@@ -251,7 +327,7 @@ h3 {
   background-color: #fff;
   border-radius: 15px;
   margin: 0 0 20px 0;
-  box-shadow: 0px 5px 10px #cfcfcf;
+  box-shadow: 0px 1px 10px #cfcfcf;
   overflow: hidden;
 }
 .rest__bloc__img--palette {

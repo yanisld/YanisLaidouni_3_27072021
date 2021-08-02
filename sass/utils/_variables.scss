@@ -1,7 +1,7 @@
 $global-font:16px 'robotomedium', sans-serif;
 $h1-font:30px 'shrikhandregular', sans-serif;
 $h2-h3-home-font:25px 'robotobold', sans-serif;
-$rest-title:25px 'shrikhandregular', sans-serif;
+$rest-title:28px 'shrikhandregular', sans-serif;
 $light-font:'robotolight', sans-serif;
 $regular-font:'robotoregular', sans-serif;
 $thin-font:'robotothin', sans-serif;
@@ -15,7 +15,8 @@ $grey:#cfcfcf;
 $grey-clar:#f6f6f6;
 $dark-grey:#353535;
 
-$basic-box-shadow:0px 5px 10px $grey;
+$basic-box-shadow:0px 1px 10px $grey;
+$btn-box-shadow:0px 5px 10px $grey;
 
 $img-palette:url('images/la-palette-du-gout.jpg');
 $img-note:url('images/la-note-enchantee.jpg');
