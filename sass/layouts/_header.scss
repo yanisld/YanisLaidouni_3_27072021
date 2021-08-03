@@ -1,4 +1,47 @@
+header {
+    background-color: #fff;
+}
+.menu-header {
+    margin: 0 0 20px 0;
+}
+.top-header {
+    display: grid;
+    grid-template-columns: auto 250px auto;
+    align-items: center;
+    &__arrow {
+        justify-self: end;
+    }
+}
 h1 {
     text-align:center;
     padding:15px 0;
+}
+.background-palette {
+    background-image: $img-palette;
+    @include backgroundImageMenu;
+}
+.background-note {
+    background-image: $img-note;
+    @include backgroundImageMenu;
+}
+.background-francaise {
+    background-image: $img-francaise;
+    @include backgroundImageMenu;
+}
+.background-delice {
+    background-image: $img-delice;
+    @include backgroundImageMenu;
+}
+.rest-intro {
+    background-color:$grey-clar;
+    width: 100%;
+    align-self: flex-end; 
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0;
+    border-radius: 35px 35px 0 0;
+    font-size: 24px;
+    &__title {
+        font:$rest-title;
+    }
 }

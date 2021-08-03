@@ -1,4 +1,53 @@
 section {
-    padding:50px 20px;
+    padding:20px 20px 1px;
     background-color: $grey-clar;
+}
+.menu-intro {
+    font-family: "robotolight";
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    margin:0 0 20px 0;
+    position: relative;
+    &:before {
+        content :"";
+        position:absolute;
+        bottom:0;
+        width:40px;
+        border-bottom: 3px solid $tertiary-color;
+    }   
+}
+.menu a {
+    margin:0 0 15px 0;
+}
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    margin: 0 0 15px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: $basic-box-shadow;
+    &__txt {
+        flex: 3;
+        &__title {
+            font-size:17px;
+        }
+        &__sub-title {
+            font-family: $light-font;
+            font-size: 14px;
+        }
+    }
+    &__price {
+        flex: 0.5;
+        align-self: flex-end;
+    }
+    &__check {
+        flex:0.5;
+        display: none;
+    }
+}
+.btn-commander {
+    background-color: $grey-clar;
+    text-align: center;
+    padding: 40px 0;
 }
