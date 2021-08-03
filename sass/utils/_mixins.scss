@@ -1,6 +1,7 @@
 @mixin button {
     border-radius:25px;
     border:none;
+    cursor: pointer;
     color:#fff;
     background-image: linear-gradient($secondary-color, $primary-color);
     box-shadow: $btn-box-shadow;
@@ -15,7 +16,7 @@
     background-position: center;
 }
 @mixin backgroundImageMenu {
-    height: 250px;
+    height: 280px;
     background-size: cover;
     background-position: center;
     display: flex;

@@ -29,6 +29,9 @@ section {
     box-shadow: $basic-box-shadow;
     &__txt {
         flex: 3;
+        &__title {
+            font-size:17px;
+        }
         &__sub-title {
             font-family: $light-font;
             font-size: 14px;

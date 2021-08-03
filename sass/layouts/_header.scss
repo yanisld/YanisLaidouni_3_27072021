@@ -20,6 +20,18 @@ h1 {
     background-image: $img-palette;
     @include backgroundImageMenu;
 }
+.background-note {
+    background-image: $img-note;
+    @include backgroundImageMenu;
+}
+.background-francaise {
+    background-image: $img-francaise;
+    @include backgroundImageMenu;
+}
+.background-delice {
+    background-image: $img-delice;
+    @include backgroundImageMenu;
+}
 .rest-intro {
     background-color:$grey-clar;
     width: 100%;
