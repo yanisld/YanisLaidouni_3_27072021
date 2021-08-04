@@ -274,13 +274,18 @@ h4 {
   margin: 0 0 20px 0;
 }
 
-.list-1 .fas {
+.bottom-links__list-1 .fas {
   margin: 0 10px 0 0;
   font-size: 14px;
 }
 
-.list-2 {
+.bottom-links__list-1 {
   font-family: "robotoregular", sans-serif;
+}
+
+.bottom-links__list-1 li a,
+.bottom-links__list-2 li a {
+  color: #fff;
 }
 
 .home-section {
@@ -348,10 +353,6 @@ h3 {
   color: #7e7e7e;
 }
 
-.rest {
-  display: flex;
-  flex-direction: column;
-}
 .rest__bloc {
   background-color: #fff;
   border-radius: 15px;
@@ -405,6 +406,124 @@ h3 {
 .rest__bloc__txt__fav {
   font-size: 23px;
   margin: 0 10px 0 0;
+}
+
+@media all and (max-width: 320px) {
+  .fonc__bloc {
+    padding: 25px 0;
+  }
+  .fonc__bloc__num {
+    right: 10px;
+  }
+
+  .rest-intro__title {
+    font-size: 22px;
+  }
+
+  .menu__items__txt__title,
+.menu__items__txt__sub-title {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media all and (min-width: 425px) {
+  .menu-intro,
+.menu {
+    max-width: 425px;
+    margin: 0 auto 20px;
+  }
+  .menu-intro__items__txt,
+.menu__items__txt {
+    flex: 5;
+  }
+  .menu-intro__items__txt__title,
+.menu__items__txt__title {
+    font-size: 20px;
+  }
+  .menu-intro__items__txt__sub-title,
+.menu__items__txt__sub-title {
+    font-size: 16px;
+  }
+  .menu-intro__items__price,
+.menu__items__price {
+    font-size: 20px;
+  }
+}
+@media all and (min-width: 768px) {
+  .fonc {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fonc__bloc {
+    padding: 20px 10px 20px 0;
+  }
+  .fonc__bloc__num {
+    right: 12px;
+  }
+  .fonc__bloc .fas {
+    margin: 0 10px 0 0;
+  }
+
+  .rest {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+  }
+
+  .rest-intro__title {
+    flex: 1;
+    text-align: center;
+  }
+
+  .bottom-links {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media all and (min-width: 992px) {
+  section {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .fonctionnement {
+    border-radius: 10px;
+  }
+
+  .fonc__bloc {
+    padding: 25px 25px 25px 10px;
+  }
+  .fonc__bloc__num {
+    right: 23px;
+  }
+  .fonc__bloc .fas {
+    margin: 0 25px 0 0;
+  }
+
+  .rest {
+    grid-template-columns: 233px 233px 233px 233px;
+  }
+
+  .rest__bloc__txt__title {
+    font-size: 18px;
+  }
+
+  .rest-intro {
+    border-radius: 0;
+    justify-content: center;
+  }
+  .rest-intro__title {
+    flex: none;
+    margin: 0 20px 0 0;
+  }
+
+  footer h4,
+.bottom-links {
+    max-width: 992px;
+    margin: 0 auto 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

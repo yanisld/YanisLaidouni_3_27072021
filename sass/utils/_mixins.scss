@@ -6,10 +6,6 @@
     background-image: linear-gradient($secondary-color, $primary-color);
     box-shadow: $btn-box-shadow;
 }
-@mixin verticaldisplay {
-    display: flex;
-    flex-direction: column;
-}
 @mixin backgroundimage {
     height: 175px;
     background-size: cover;

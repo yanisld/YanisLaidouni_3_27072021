@@ -1,0 +1,103 @@
+@media all and (max-width:320px) {
+    .fonc__bloc {
+        padding:25px 0;
+        &__num {
+            right:10px;
+        }
+    }
+    .rest-intro__title {
+        font-size: 22px;
+    }
+    .menu__items__txt__title,
+    .menu__items__txt__sub-title {
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+@media all and (min-width:425px) {
+    .menu-intro,
+    .menu {
+        max-width:425px;
+        margin: 0 auto 20px;
+        &__items__txt {
+            flex:5;
+            &__title {
+                font-size:20px;
+            }
+            &__sub-title {
+                font-size:16px;
+            }
+        }
+        &__items__price {
+            font-size:20px;
+        }
+    }
+    
+}
+@media all and (min-width:768px) {
+    .fonc {
+        flex-direction: row;
+        justify-content: space-between;
+        &__bloc {
+            padding: 20px 10px 20px 0;
+            &__num {
+                right: 12px;
+            }
+            .fas {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+    .rest {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+    }
+    .rest-intro__title {
+        flex: 1;
+        text-align: center;
+    }
+    .bottom-links {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media all and (min-width:992px) {
+    section {
+        max-width: 992px;
+        margin:0 auto;
+    }
+    .fonctionnement {
+        border-radius: 10px;
+    }
+    .fonc__bloc {
+        padding: 25px 25px 25px 10px;
+        &__num {
+            right: 23px;
+        }
+        .fas {
+            margin: 0 25px 0 0;
+        }
+    }
+    .rest {
+        grid-template-columns: 233px 233px 233px 233px;
+    }
+    .rest__bloc__txt__title {
+        font-size:18px;
+    }
+    .rest-intro {
+        border-radius: 0;
+        justify-content: center;
+        &__title {
+            flex:none;
+            margin:0 20px 0 0;
+        }
+    }
+    footer h4,
+    .bottom-links {
+        max-width: 992px;
+        margin:0 auto 20px
+    }
+}

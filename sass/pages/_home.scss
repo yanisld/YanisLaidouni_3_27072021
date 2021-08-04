@@ -32,7 +32,8 @@ h3 {
     margin:0 0 30px 0;
 }
 .fonc {
-    @include verticaldisplay;
+    display: flex;
+    flex-direction: column;
     a {
         margin:0 0 20px 0;
     }
@@ -57,7 +58,6 @@ h3 {
     }
 }
 .rest {
-    @include verticaldisplay;
     &__bloc {
         background-color: #fff;
         border-radius: 15px;
