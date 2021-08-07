@@ -6,3 +6,49 @@ button {
     @include button;
     padding: 15px 40px;
 }
+.rest__bloc__txt__fav,
+.rest-intro__fav {
+    width:100%;
+    text-align: center;
+    &__reg {
+        width:100%;
+    }
+    &__sol {
+        width:100%;
+        opacity:0;
+        background-image: linear-gradient($primary-color, $secondary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        position: relative;
+        bottom: 31px;
+    }
+}
+.rest__bloc__txt__fav:hover,
+.rest__bloc__txt__fav:active {
+    .rest__bloc__txt__fav__sol {
+        @include hoverHeartSol;
+    }
+    .rest__bloc__txt__fav__reg {
+        @include hoverHeartReg;
+    }
+}
+.rest-intro__fav:hover,
+.rest-intro__fav:active {
+    .rest-intro__fav__sol {
+        @include hoverHeartSol;
+    }
+    .rest-intro__fav__reg {
+        @include hoverHeartReg;
+    }
+}
+.rest-intro__fav__sol,
+.rest-intro__fav__reg {
+    vertical-align: top;
+}
+@-moz-document url-prefix() {
+    .rest-intro__fav__sol,
+    .rest-intro__fav__reg {
+    vertical-align: baseline;
+    }
+}

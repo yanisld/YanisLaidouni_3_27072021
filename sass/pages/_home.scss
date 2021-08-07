@@ -89,7 +89,8 @@ h3 {
             border-radius: 2px;
         }
         &__txt {
-            display: flex;
+            display: grid;
+            grid-template-columns: auto 40px;
             justify-content: space-between;
             padding:15px 10px;
             &__title {
@@ -100,7 +101,6 @@ h3 {
             }
             &__fav {
                 font-size: 23px;
-                margin: 0 10px 0 0;
             }
         }
     }

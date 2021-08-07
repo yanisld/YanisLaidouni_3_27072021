@@ -17,3 +17,15 @@
     background-position: center;
     display: flex;
 }
+@mixin hoverHeartSol {
+    opacity:1;  
+    transition: opacity 1300ms;
+    cursor: pointer;
+}
+@mixin hoverHeartReg {
+    background-image: linear-gradient($primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
