@@ -42,6 +42,12 @@ h3 {
         background-color:$grey-clar;
         box-shadow: $basic-box-shadow;
         border-radius: 20px;
+        &:hover {
+            background-color: lighten($primary-color, 30%);
+            > .fas {
+                color:$primary-color;
+            }
+        }
         &__num {
             background-color: $primary-color;
             font-family:$regular-font;

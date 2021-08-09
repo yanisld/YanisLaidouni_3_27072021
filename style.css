@@ -123,6 +123,10 @@ button {
   box-shadow: 0px 5px 10px #cfcfcf;
   padding: 15px 20px;
 }
+button:hover {
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 10px 15px #cfcfcf;
+}
 
 .btn-commander button {
   border-radius: 25px;
@@ -447,6 +451,12 @@ h3 {
   box-shadow: 0px 1px 10px #cfcfcf;
   border-radius: 20px;
 }
+.fonc__bloc:hover {
+  background-color: #e4d5f6;
+}
+.fonc__bloc:hover > .fas {
+  color: #9356DC;
+}
 .fonc__bloc__num {
   background-color: #9356DC;
   font-family: "robotoregular", sans-serif;
@@ -611,7 +621,7 @@ h3 {
   }
 
   .rest {
-    grid-template-columns: 233px 233px 233px 233px;
+    grid-template-columns: 223px 223px 223px 223px;
   }
 
   .rest__bloc__txt__title {
