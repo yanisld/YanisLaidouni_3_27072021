@@ -43,3 +43,21 @@
         visibility: visible;
     }
 }
+.menu__items {   
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            opacity: 0;
+            animation:appear 1s forwards;
+            animation-delay: 333ms * $i;
+        }
+    }
+}
+@keyframes appear {
+    0% {
+        transform:translateY(30%);
+    }
+    100% {
+        transform:translateY(0%);
+        opacity: 1;
+    }
+}

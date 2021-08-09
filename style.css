@@ -137,6 +137,10 @@ button:hover {
   box-shadow: 0px 5px 10px #cfcfcf;
   padding: 15px 40px;
 }
+.btn-commander button:hover {
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0px 10px 15px #cfcfcf;
+}
 
 .rest__bloc__txt__fav,
 .rest-intro__fav {
@@ -243,6 +247,66 @@ button:hover {
   }
   to {
     visibility: visible;
+  }
+}
+.menu__items--1 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 333ms;
+}
+.menu__items--2 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 666ms;
+}
+.menu__items--3 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 999ms;
+}
+.menu__items--4 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 1332ms;
+}
+.menu__items--5 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 1665ms;
+}
+.menu__items--6 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 1998ms;
+}
+.menu__items--7 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 2331ms;
+}
+.menu__items--8 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 2664ms;
+}
+.menu__items--9 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 2997ms;
+}
+.menu__items--10 {
+  opacity: 0;
+  animation: appear 1s forwards;
+  animation-delay: 3330ms;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 body {
