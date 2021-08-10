@@ -8,10 +8,14 @@
     .rest-intro__title {
         font-size: 22px;
     }
+    .menu__items__txt {
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
     .menu__items__txt__title,
     .menu__items__txt__sub-title {
         white-space: nowrap;
-        width: 200px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
@@ -22,7 +26,6 @@
         max-width:425px;
         margin: 0 auto 20px;
         &__items__txt {
-            flex:5;
             &__title {
                 font-size:20px;
             }

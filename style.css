@@ -252,52 +252,63 @@ button:hover {
 .menu__items--1 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 333ms;
+  animation-delay: 200ms;
 }
 .menu__items--2 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 666ms;
+  animation-delay: 400ms;
 }
 .menu__items--3 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 999ms;
+  animation-delay: 600ms;
 }
 .menu__items--4 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1332ms;
+  animation-delay: 800ms;
 }
 .menu__items--5 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1665ms;
+  animation-delay: 1000ms;
 }
 .menu__items--6 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1998ms;
+  animation-delay: 1200ms;
 }
 .menu__items--7 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2331ms;
+  animation-delay: 1400ms;
 }
 .menu__items--8 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2664ms;
+  animation-delay: 1600ms;
 }
 .menu__items--9 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2997ms;
+  animation-delay: 1800ms;
 }
 .menu__items--10 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 3330ms;
+  animation-delay: 2000ms;
+}
+.menu__items:hover > .menu__items__check {
+  animation: check 400ms forwards ease-in-out;
+  transform-origin: right;
+}
+.menu__items:hover > .menu__items__check .fa-check-circle {
+  animation: rotateCheck 400ms 100ms;
+}
+.menu__items:not(:hover) > .menu__items__check {
+  animation: uncheck 400ms forwards ease-in-out;
+  transform-origin: right;
 }
 
 @keyframes appear {
@@ -307,6 +318,38 @@ button:hover {
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    width: 0%;
+  }
+  25% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+    width: 15%;
+  }
+}
+@keyframes uncheck {
+  0% {
+    visibility: visible;
+    width: 15%;
+  }
+  70% {
+    visibility: hidden;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes rotateCheck {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 body {
@@ -408,30 +451,47 @@ section {
 
 .menu__items {
   display: flex;
-  flex-wrap: wrap;
-  padding: 15px 10px;
   margin: 0 0 15px 0;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 1px 10px #cfcfcf;
 }
 .menu__items__txt {
-  flex: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: auto;
+  padding: 15px 0 15px 10px;
 }
 .menu__items__txt__title {
   font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__items__txt__sub-title {
   font-family: "robotolight", sans-serif;
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__items__price {
-  flex: 0.5;
   align-self: flex-end;
+  padding: 15px 10px 15px 0;
 }
 .menu__items__check {
-  flex: 0.5;
-  display: none;
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  font-size: 20px;
+  color: #fff;
+  width: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.menu__items__check .fa-check-circle {
+  align-self: center;
 }
 
 .btn-commander {
@@ -602,10 +662,15 @@ h3 {
     font-size: 22px;
   }
 
+  .menu__items__txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .menu__items__txt__title,
 .menu__items__txt__sub-title {
     white-space: nowrap;
-    width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -615,10 +680,6 @@ h3 {
 .menu {
     max-width: 425px;
     margin: 0 auto 20px;
-  }
-  .menu-intro__items__txt,
-.menu__items__txt {
-    flex: 5;
   }
   .menu-intro__items__txt__title,
 .menu__items__txt__title {

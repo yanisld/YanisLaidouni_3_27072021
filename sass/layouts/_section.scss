@@ -21,29 +21,46 @@ section {
 }
 .menu__items {
     display: flex;
-    flex-wrap: wrap;
-    padding: 15px 10px;
     margin: 0 0 15px 0;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: $basic-box-shadow;
     &__txt {
-        flex: 3;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        flex: auto;
+        padding: 15px 0 15px 10px;
         &__title {
             font-size:17px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &__sub-title {
             font-family: $light-font;
             font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     &__price {
-        flex: 0.5;
         align-self: flex-end;
+        padding: 15px 10px 15px 0;
     }
     &__check {
-        flex:0.5;
-        display: none;
+        background-color: $tertiary-color;
+        border-radius: 0 15px 15px 0;
+        font-size: 20px;
+        color: #fff;
+        width: 0;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        .fa-check-circle {
+            align-self:center;
+        }
     }
 }
 .btn-commander {

@@ -48,8 +48,19 @@
         &--#{$i} {
             opacity: 0;
             animation:appear 1s forwards;
-            animation-delay: 333ms * $i;
+            animation-delay: 200ms * $i;
         }
+    }
+    &:hover > .menu__items__check { 
+        animation:check 400ms forwards ease-in-out;
+        transform-origin: right;
+        .fa-check-circle {
+            animation:rotateCheck 400ms 100ms;
+        }
+    }
+    &:not(:hover) > .menu__items__check { 
+        animation:uncheck 400ms forwards ease-in-out;
+        transform-origin: right;
     }
 }
 @keyframes appear {
@@ -59,5 +70,37 @@
     100% {
         transform:translateY(0%);
         opacity: 1;
+    }
+}
+@keyframes check {
+    0% {
+        width:0%; 
+    }
+    25% {
+        visibility: hidden; 
+    }
+    100% {
+        visibility: visible;
+        width:15%;
+    }
+}
+@keyframes uncheck {
+    0% {
+        visibility: visible;
+        width:15%;    
+    }
+    70% {
+        visibility: hidden; 
+    }
+    100% {
+        width:0%; 
+    }
+}
+@keyframes rotateCheck {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg)
     }
 }
