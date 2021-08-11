@@ -6,16 +6,20 @@ footer {
 h4 {
     margin:0 0 20px 0;
 }
-.bottom-links__list-1 {
-    .fas {
-        margin: 0 10px 0 0;
-        font-size: 14px;
+.bottom-links {
+    line-height:27px;
+    &__list-1 {
+        font-family: 'robotomedium', sans-serif;
+        .fas {
+            margin: 0 10px 0 0;
+            font-size: 14px;
+        }
     }
-}
-.bottom-links__list-1 {
-    font-family: $regular-font;
-}
-.bottom-links__list-1 li a,
-.bottom-links__list-2 li a {
-    color:#fff;
+    &__list-2 {
+        font-family: $regular-font;
+    }
+    &__list-1 li a,
+    &__list-2 li a {
+        color:#fff;
+    }
 }

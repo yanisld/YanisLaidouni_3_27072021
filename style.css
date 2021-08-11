@@ -115,6 +115,7 @@ h4 {
 }
 
 button {
+  font-family: "robotomedium", sans-serif;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -129,6 +130,7 @@ button:hover {
 }
 
 .btn-commander button {
+  font-family: "robotomedium", sans-serif;
   border-radius: 25px;
   border: none;
   cursor: pointer;
@@ -156,7 +158,6 @@ button:hover {
   width: 100%;
   opacity: 0;
   background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   position: relative;
@@ -172,7 +173,6 @@ button:hover {
 .rest__bloc__txt__fav:hover .rest__bloc__txt__fav__reg,
 .rest__bloc__txt__fav:active .rest__bloc__txt__fav__reg {
   background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -187,7 +187,6 @@ button:hover {
 .rest-intro__fav:hover .rest-intro__fav__reg,
 .rest-intro__fav:active .rest-intro__fav__reg {
   background-image: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -360,10 +359,6 @@ header {
   background-color: #fff;
 }
 
-.menu-header {
-  margin: 0 0 20px 0;
-}
-
 .top-header {
   display: grid;
   grid-template-columns: auto 250px auto;
@@ -380,7 +375,7 @@ h1 {
 
 .background-palette {
   background-image: url("images/la-palette-du-gout.jpg");
-  height: 280px;
+  height: 330px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -388,7 +383,7 @@ h1 {
 
 .background-note {
   background-image: url("images/la-note-enchantee.jpg");
-  height: 280px;
+  height: 330px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -396,7 +391,7 @@ h1 {
 
 .background-francaise {
   background-image: url("images/a-la-francaise.jpg");
-  height: 280px;
+  height: 330px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -404,7 +399,7 @@ h1 {
 
 .background-delice {
   background-image: url("images/delice-des-sens.jpg");
-  height: 280px;
+  height: 330px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -428,6 +423,10 @@ h1 {
 section {
   padding: 20px 20px 1px;
   background-color: #f6f6f6;
+}
+
+.section-entrees {
+  padding: 0px 20px 1px;
 }
 
 .menu-intro {
@@ -510,17 +509,20 @@ h4 {
   margin: 0 0 20px 0;
 }
 
+.bottom-links {
+  line-height: 27px;
+}
+.bottom-links__list-1 {
+  font-family: "robotomedium", sans-serif;
+}
 .bottom-links__list-1 .fas {
   margin: 0 10px 0 0;
   font-size: 14px;
 }
-
-.bottom-links__list-1 {
+.bottom-links__list-2 {
   font-family: "robotoregular", sans-serif;
 }
-
-.bottom-links__list-1 li a,
-.bottom-links__list-2 li a {
+.bottom-links__list-1 li a, .bottom-links__list-2 li a {
   color: #fff;
 }
 
@@ -638,7 +640,7 @@ h3 {
   display: grid;
   grid-template-columns: auto 40px;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 15px 10px 0;
 }
 .rest__bloc__txt__title {
   font-family: "robotobold", sans-serif;
@@ -715,6 +717,10 @@ h3 {
     grid-column-gap: 20px;
   }
 
+  .rest-intro {
+    justify-content: center;
+  }
+
   .rest-intro__title {
     flex: 1;
     text-align: center;
@@ -747,6 +753,7 @@ h3 {
 
   .rest {
     grid-template-columns: 223px 223px 223px 223px;
+    justify-content: space-between;
   }
 
   .rest__bloc__txt__title {
@@ -755,13 +762,17 @@ h3 {
 
   .rest-intro {
     border-radius: 0;
-    justify-content: center;
   }
 
   footer h4,
 .bottom-links {
     max-width: 992px;
     margin: 0 auto 20px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .rest {
+    grid-template-columns: 233px 233px 233px 233px;
   }
 }
 

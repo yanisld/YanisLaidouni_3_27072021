@@ -1,4 +1,5 @@
 @mixin button {
+    font-family: 'robotomedium', sans-serif;
     border-radius:25px;
     border:none;
     cursor: pointer;
@@ -12,7 +13,7 @@
     background-position: center;
 }
 @mixin backgroundImageMenu {
-    height: 280px;
+    height: 330px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -24,7 +25,6 @@
 }
 @mixin hoverHeartReg {
     background-image: linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     cursor: pointer;

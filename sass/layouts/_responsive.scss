@@ -58,6 +58,9 @@
         grid-template-columns: auto auto;
         grid-column-gap: 20px;
     }
+    .rest-intro {
+        justify-content: center;
+    }
     .rest-intro__title {
         flex: 1;
         text-align: center;
@@ -86,17 +89,22 @@
     }
     .rest {
         grid-template-columns: 223px 223px 223px 223px;
+        justify-content: space-between;
     }
     .rest__bloc__txt__title {
         font-size:18px;
     }
     .rest-intro {
         border-radius: 0;
-        justify-content: center;
     }
     footer h4,
     .bottom-links {
         max-width: 992px;
         margin:0 auto 20px
+    }
+}
+@media all and (min-width:1024px) {
+    .rest {
+        grid-template-columns: 233px 233px 233px 233px;
     }
 }
