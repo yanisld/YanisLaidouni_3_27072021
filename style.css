@@ -166,7 +166,7 @@ button:hover {
 .rest__bloc__txt__fav:hover .rest__bloc__txt__fav__sol,
 .rest__bloc__txt__fav:active .rest__bloc__txt__fav__sol {
   opacity: 1;
-  transition: opacity 1300ms;
+  transition: opacity 1000ms;
   cursor: pointer;
 }
 .rest__bloc__txt__fav:hover .rest__bloc__txt__fav__reg,
@@ -181,7 +181,7 @@ button:hover {
 .rest-intro__fav:hover .rest-intro__fav__sol,
 .rest-intro__fav:active .rest-intro__fav__sol {
   opacity: 1;
-  transition: opacity 1300ms;
+  transition: opacity 1000ms;
   cursor: pointer;
 }
 .rest-intro__fav:hover .rest-intro__fav__reg,
@@ -211,7 +211,7 @@ button:hover {
   height: 100%;
   background-color: #fff;
   z-index: 100;
-  animation: visibility 3s;
+  animation: visibility 2300ms;
   animation-fill-mode: backwards;
 }
 .load::after {
@@ -230,7 +230,7 @@ button:hover {
   border-right: 16px solid #FF79DA;
   border-bottom: 16px solid #99E2D0;
   border-left: 16px solid #f6f6f6;
-  animation: loading 2s 500ms ease-in;
+  animation: loading 1500ms 700ms ease-in-out;
 }
 
 @keyframes loading {
@@ -252,63 +252,63 @@ button:hover {
 .menu__items--1 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 200ms;
+  animation-delay: 350ms;
 }
 .menu__items--2 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 400ms;
+  animation-delay: 700ms;
 }
 .menu__items--3 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 600ms;
+  animation-delay: 1050ms;
 }
 .menu__items--4 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 800ms;
+  animation-delay: 1400ms;
 }
 .menu__items--5 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1000ms;
+  animation-delay: 1750ms;
 }
 .menu__items--6 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1200ms;
+  animation-delay: 2100ms;
 }
 .menu__items--7 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1400ms;
+  animation-delay: 2450ms;
 }
 .menu__items--8 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1600ms;
+  animation-delay: 2800ms;
 }
 .menu__items--9 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1800ms;
+  animation-delay: 3150ms;
 }
 .menu__items--10 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2000ms;
+  animation-delay: 3500ms;
+}
+.menu__items > .menu__items__check {
+  animation: uncheck 400ms forwards ease-in-out;
+  transform-origin: right;
 }
 .menu__items:hover > .menu__items__check {
-  animation: check 400ms forwards ease-in-out;
+  animation: check 400ms both ease-in-out;
   transform-origin: right;
 }
 .menu__items:hover > .menu__items__check .fa-check-circle {
   animation: rotateCheck 400ms 100ms;
-}
-.menu__items:not(:hover) > .menu__items__check {
-  animation: uncheck 400ms forwards ease-in-out;
-  transform-origin: right;
 }
 
 @keyframes appear {

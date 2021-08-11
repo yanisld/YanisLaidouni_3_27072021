@@ -6,7 +6,7 @@
     height:100%;
     background-color: #fff;
     z-index: 100;
-    animation:visibility 3s;
+    animation:visibility 2300ms;
     animation-fill-mode: backwards;
     &::after {
         box-sizing: border-box;
@@ -24,7 +24,7 @@
         border-right: 16px solid $secondary-color;
         border-bottom: 16px solid $tertiary-color;
         border-left: 16px solid $grey-clar;
-        animation:loading 2s 500ms ease-in;
+        animation:loading 1500ms 700ms ease-in-out;
     }
 }
 @keyframes loading {
@@ -43,24 +43,24 @@
         visibility: visible;
     }
 }
-.menu__items {   
+.menu__items {  
     @for $i from 1 through 10 {
         &--#{$i} {
             opacity: 0;
             animation:appear 1s forwards;
-            animation-delay: 200ms * $i;
+            animation-delay: 350ms * $i;
         }
     }
+    > .menu__items__check {
+        animation:uncheck 400ms forwards ease-in-out;
+        transform-origin: right;
+    }
     &:hover > .menu__items__check { 
-        animation:check 400ms forwards ease-in-out;
+        animation:check 400ms both ease-in-out;
         transform-origin: right;
         .fa-check-circle {
             animation:rotateCheck 400ms 100ms;
         }
-    }
-    &:not(:hover) > .menu__items__check { 
-        animation:uncheck 400ms forwards ease-in-out;
-        transform-origin: right;
     }
 }
 @keyframes appear {
