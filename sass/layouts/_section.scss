@@ -28,6 +28,7 @@ section {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: $basic-box-shadow;
+    cursor: pointer;
     &__txt {
         white-space: nowrap;
         overflow: hidden;
@@ -61,6 +62,7 @@ section {
         visibility: hidden;
         display: flex;
         justify-content: center;
+        overflow: hidden;
         .fa-check-circle {
             align-self:center;
         }

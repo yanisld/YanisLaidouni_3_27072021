@@ -211,7 +211,7 @@ button:hover {
   height: 100%;
   background-color: #fff;
   z-index: 100;
-  animation: visibility 2300ms;
+  animation: visibility 1800ms;
   animation-fill-mode: backwards;
 }
 .load::after {
@@ -230,7 +230,7 @@ button:hover {
   border-right: 16px solid #FF79DA;
   border-bottom: 16px solid #99E2D0;
   border-left: 16px solid #f6f6f6;
-  animation: loading 1500ms 700ms ease-in-out;
+  animation: loading 1500ms 200ms ease-in-out;
 }
 
 @keyframes loading {
@@ -257,47 +257,47 @@ button:hover {
 .menu__items--2 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 700ms;
+  animation-delay: 500ms;
 }
 .menu__items--3 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1050ms;
+  animation-delay: 750ms;
 }
 .menu__items--4 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1400ms;
+  animation-delay: 1000ms;
 }
 .menu__items--5 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 1750ms;
+  animation-delay: 1250ms;
 }
 .menu__items--6 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2100ms;
+  animation-delay: 1500ms;
 }
 .menu__items--7 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2450ms;
+  animation-delay: 1750ms;
 }
 .menu__items--8 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 2800ms;
+  animation-delay: 2000ms;
 }
 .menu__items--9 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 3150ms;
+  animation-delay: 2250ms;
 }
 .menu__items--10 {
   opacity: 0;
   animation: appear 1s forwards;
-  animation-delay: 3500ms;
+  animation-delay: 2500ms;
 }
 .menu__items > .menu__items__check {
   animation: uncheck 400ms forwards ease-in-out;
@@ -455,6 +455,7 @@ section {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 1px 10px #cfcfcf;
+  cursor: pointer;
 }
 .menu__items__txt {
   white-space: nowrap;
@@ -489,6 +490,7 @@ section {
   visibility: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .menu__items__check .fa-check-circle {
   align-self: center;
@@ -569,10 +571,9 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.fonc a {
-  margin: 0 0 20px 0;
-}
 .fonc__bloc {
+  margin: 0 0 20px 0;
+  cursor: pointer;
   padding: 25px 25px;
   background-color: #f6f6f6;
   box-shadow: 0px 1px 10px #cfcfcf;
@@ -580,6 +581,7 @@ h3 {
 }
 .fonc__bloc:hover {
   background-color: #e4d5f6;
+  transition: background-color 1000ms;
 }
 .fonc__bloc:hover > .fas {
   color: #9356DC;
@@ -609,25 +611,25 @@ h3 {
   height: 175px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/la-palette-du-gout.jpg");
+  background-image: url("images/home-img/la-palette-du-gout.jpg");
 }
 .rest__bloc__img--note {
   height: 175px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/la-note-enchantee.jpg");
+  background-image: url("images/home-img/la-note-enchantee.jpg");
 }
 .rest__bloc__img--francaise {
   height: 175px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/a-la-francaise.jpg");
+  background-image: url("images/home-img/a-la-francaise.jpg");
 }
 .rest__bloc__img--delice {
   height: 175px;
   background-size: cover;
   background-position: center;
-  background-image: url("images/delice-des-sens.jpg");
+  background-image: url("images/home-img/delice-des-sens.jpg");
 }
 .rest__bloc__new {
   background-color: #99E2D0;
