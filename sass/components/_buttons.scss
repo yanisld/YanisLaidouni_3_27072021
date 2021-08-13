@@ -24,9 +24,7 @@ button {
     &__sol {
         width:100%;
         opacity:0;
-        background-image: linear-gradient($primary-color, $secondary-color);
-        -webkit-background-clip: text;
-        color: transparent;
+        @include hoverHeartReg;
         position: relative;
         bottom: 31px;
     }
